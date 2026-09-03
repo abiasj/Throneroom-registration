@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>THRONEROOM '26 | Registration</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <main class="container">
+
+    <section class="hero">
+
+      <div class="cross">✝</div>
+
+      <p class="small-title">YOU ARE INVITED</p>
+
+      <h1>THRONEROOM <span>'26</span></h1>
+
+      <p class="subtitle">
+        Registration
+      </p>
+
+      <p class="intro">
+        We are happy to have you with us.
+        Please register for Throneroom '26.
+      </p>
+
+    </section>
+
+
+    <section class="registration-card">
+
+      <h2>Registration</h2>
+
+      <p class="card-description">
+        Please fill in your details below.
+      </p>
+
+
+      <form id="registrationForm">
+
+        <div class="input-row">
+
+          <div class="input-group">
+            <label for="first_name">First Name</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              placeholder="Your first name"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label for="surname">Surname</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Your surname"
+              required
+            >
+          </div>
+
+        </div>
+
+
+        <div class="input-group">
+
+          <label for="telephone">Telephone Number</label>
+
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="+49 ..."
+            required
+          >
+
+        </div>
+
+
+        <div class="input-group">
+
+          <label>Department</label>
+
+          <div class="options">
+
+            <label class="option">
+              <input type="radio" name="department" value="Usher" required>
+              <span>Usher</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="department" value="Tech">
+              <span>Tech</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="department" value="Media">
+              <span>Media</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="department" value="Choir">
+              <span>Choir</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="department" value="Catering">
+              <span>Catering</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="department" value="None of the above">
+              <span>None of the above</span>
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <div class="input-group">
+
+          <label>
+            Will you be attending alone or with someone?
+          </label>
+
+          <div class="options">
+
+            <label class="option">
+              <input
+                type="radio"
+                name="attendance"
+                value="Alone"
+                required
+                onchange="toggleCompanion(false)"
+              >
+              <span>Attending alone</span>
+            </label>
+
+            <label class="option">
+              <input
+                type="radio"
+                name="attendance"
+                value="With someone"
+                onchange="toggleCompanion(true)"
+              >
+              <span>Attending with someone</span>
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="input-group companion-field"
+          id="companionField"
+          style="display: none;"
+        >
+
+          <label for="companion_name">
+            Companion's Name
+          </label>
+
+          <input
+            type="text"
+            id="companion_name"
+            name="companion_name"
+            placeholder="Name of the person you're coming with"
+          >
+
+        </div>
+
+
+        <button type="submit">
+          REGISTER NOW
+        </button>
+
+        <p id="message"></p>
+
+      </form>
+
+    </section>
+
+
+    <footer>
+
+      <p>THRONEROOM '26</p>
+
+      <p>© 2026</p>
+
+    </footer>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
