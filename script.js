@@ -109,7 +109,7 @@ document
     };
 
 
-    message.textContent = "Registering...";
+    message.textContent = "Anmeldung wird gesendet...";
 
 
     try {
@@ -118,7 +118,7 @@ document
 
 
       message.textContent =
-        "Thank you! Your registration has been received.";
+        "Vielen Dank! Deine Anmeldung wurde erfolgreich übermittelt.";
 
 
       this.reset();
@@ -133,7 +133,7 @@ document
 
 
       message.textContent =
-        "Something went wrong. Please try again.";
+        "Etwas ist schiefgelaufen. Bitte versuche es erneut.";
 
     }
 
