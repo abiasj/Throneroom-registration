@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>THRONEROOM '26 | Registration</title>
+  <title>THRONEROOM '26 | Anmeldung</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,15 +20,15 @@
 
       <div class="cross">✝</div>
 
-      <p class="small-title">YOU ARE INVITED</p>
+      <p class="small-title">DU BIST EINGELADEN</p>
 
       <h1>THRONEROOM <span>'26</span></h1>
 
-      <p class="subtitle">Registration</p>
+      <p class="subtitle">Anmeldung</p>
 
       <p class="intro">
-        We are happy to have you with us.
-        Please register for Throneroom '26.
+        Wir freuen uns, dich bei uns begrüßen zu dürfen.
+        Bitte melde dich für Throneroom '26 an.
       </p>
 
     </section>
@@ -36,10 +36,10 @@
 
     <section class="registration-card">
 
-      <h2>Registration</h2>
+      <h2>Anmeldung</h2>
 
       <p class="card-description">
-        Please fill in your details below.
+        Bitte fülle die folgenden Angaben aus.
       </p>
 
 
@@ -48,23 +48,26 @@
         <div class="input-row">
 
           <div class="input-group">
-            <label for="first_name">First Name</label>
+            <label for="first_name">Vorname</label>
+
             <input
               type="text"
               id="first_name"
               name="first_name"
-              placeholder="Your first name"
+              placeholder="Dein Vorname"
               required
             >
           </div>
 
+
           <div class="input-group">
-            <label for="surname">Surname</label>
+            <label for="surname">Nachname</label>
+
             <input
               type="text"
               id="surname"
               name="surname"
-              placeholder="Your surname"
+              placeholder="Dein Nachname"
               required
             >
           </div>
@@ -74,13 +77,13 @@
 
         <div class="input-group">
 
-          <label for="age">Age</label>
+          <label for="age">Alter</label>
 
           <input
             type="number"
             id="age"
             name="age"
-            placeholder="Your age"
+            placeholder="Dein Alter"
             min="1"
             max="100"
             required
@@ -91,7 +94,7 @@
 
         <div class="input-group">
 
-          <label for="telephone">Telephone Number</label>
+          <label for="telephone">Telefonnummer</label>
 
           <input
             type="tel"
@@ -106,28 +109,28 @@
 
         <div class="input-group">
 
-          <label>Department</label>
+          <label>Bereich</label>
 
           <div class="options">
 
             <label class="option">
               <input type="radio" name="department" value="Usher" required>
-              <span>Usher</span>
+              <span>Ordnerdienst</span>
             </label>
 
             <label class="option">
               <input type="radio" name="department" value="Tech">
-              <span>Tech</span>
+              <span>Technik</span>
             </label>
 
             <label class="option">
               <input type="radio" name="department" value="Media">
-              <span>Media</span>
+              <span>Medien</span>
             </label>
 
             <label class="option">
               <input type="radio" name="department" value="Choir">
-              <span>Choir</span>
+              <span>Chor</span>
             </label>
 
             <label class="option">
@@ -137,7 +140,7 @@
 
             <label class="option">
               <input type="radio" name="department" value="None of the above">
-              <span>None of the above</span>
+              <span>Keine der oben genannten</span>
             </label>
 
           </div>
@@ -148,7 +151,7 @@
         <div class="input-group">
 
           <label>
-            Will you be attending alone or with someone?
+            Kommst du alleine oder mit jemandem?
           </label>
 
           <div class="options">
@@ -161,7 +164,7 @@
                 required
                 onchange="toggleCompanion(false)"
               >
-              <span>Attending alone</span>
+              <span>Ich komme alleine</span>
             </label>
 
             <label class="option">
@@ -171,7 +174,7 @@
                 value="With someone"
                 onchange="toggleCompanion(true)"
               >
-              <span>Attending with someone</span>
+              <span>Ich komme mit jemandem</span>
             </label>
 
           </div>
@@ -186,21 +189,21 @@
         >
 
           <label for="companion_name">
-            Companion's Name
+            Name der Begleitperson
           </label>
 
           <input
             type="text"
             id="companion_name"
             name="companion_name"
-            placeholder="Name of the person you're coming with"
+            placeholder="Name der Person, mit der du kommst"
           >
 
         </div>
 
 
         <button type="submit">
-          REGISTER NOW
+          JETZT ANMELDEN
         </button>
 
         <p id="message"></p>
