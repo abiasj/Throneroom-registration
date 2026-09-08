@@ -67,6 +67,10 @@ document
       parseInt(document.getElementById("age").value);
 
 
+    const church =
+      document.getElementById("church").value.trim();
+
+
     const telephone =
       document.getElementById("telephone").value.trim();
 
@@ -95,6 +99,8 @@ document
 
       age: age,
 
+      church: church,
+
       telephone: telephone,
 
       department: department,
@@ -109,7 +115,8 @@ document
     };
 
 
-    message.textContent = "Anmeldung wird gesendet...";
+    message.textContent =
+      "Anmeldung wird gesendet...";
 
 
     try {
@@ -124,7 +131,8 @@ document
       this.reset();
 
 
-      document.getElementById("companionField").style.display = "none";
+      document.getElementById("companionField").style.display =
+        "none";
 
 
     } catch (error) {
