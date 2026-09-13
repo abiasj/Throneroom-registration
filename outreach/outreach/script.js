@@ -152,11 +152,12 @@ document
 
     } catch (error) {
 
-      console.error(error);
+  console.error(error);
 
+  message.textContent =
+    "Fehler: " + error.message;
 
-      message.textContent =
-        "Etwas ist schiefgelaufen. Bitte versuche es erneut.";
+}
 
     }
 
