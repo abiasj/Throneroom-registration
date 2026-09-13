@@ -1,5 +1,5 @@
-const SUPABASE_URL = "DEINE_PROJECT_URL";
-const SUPABASE_KEY = "DEIN_PUBLISHABLE_ODER_ANON_KEY";
+const SUPABASE_URL = "https://hxsotjzeaxazqxctnmox.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh4c290anplYXhhenF4Y3RubW94Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgzNjM5OTAsImV4cCI6MjEwMzkzOTk5MH0.YTSu9y9ivSMUr9qycWMAI1Jd-p6jhh9c_w9GW3bERV8";
 
 
 async function saveRegistration(data) {
