@@ -80,6 +80,8 @@ document
       parseInt(
         document.getElementById("age").value
       );
+    const telephone =
+  document.getElementById("telephone").value.trim();
 
 
     const attendance =
@@ -110,7 +112,9 @@ document
       first_name: firstName,
 
       age: age,
-
+      
+      telephone: telephone,
+      
       attendance: attendance,
 
       people_with:
