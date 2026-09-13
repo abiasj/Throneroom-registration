@@ -150,14 +150,12 @@ document
       ).style.display = "none";
 
 
-    } catch (error) {
+       } catch (error) {
 
-  console.error(error);
+      console.error(error);
 
-  message.textContent =
-    "Fehler: " + error.message;
-
-}
+      message.textContent =
+        "FEHLER: " + error.message;
 
     }
 
